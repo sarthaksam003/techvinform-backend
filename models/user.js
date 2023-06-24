@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//this schema defines how data is stored in the collection as a document
 const userSchema = new mongoose.Schema({
   name: { type: String, unique: true, required: true },
   email: { type: String, unique: true, required: true },
