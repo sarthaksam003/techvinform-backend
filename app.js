@@ -15,9 +15,7 @@ app.use(express.json());
 //to enable cross origin resource sharing and establish what methods are permitted when using the API
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
     methods: ["GET", "POST"],
-    credentials: true,
   })
 );
 
